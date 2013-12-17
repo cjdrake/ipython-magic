@@ -10,4 +10,5 @@ Consult the source code for usage instructions.
 
 Contents:
 
-* Graphviz Magics: ``%dot``, ``%dotstr``, ``%dotobj``, ``%dotobjs``
+* Graphviz Magics (``gvmagic.py``):
+  ``%dot``, ``%dotstr``, ``%dotobj``, ``%dotobjs``
