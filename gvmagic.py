@@ -67,6 +67,8 @@ class GraphvizMagics(Magics):
             s = obj.to_dot()
         except AttributeError:
             error("expected object to implement 'to_dot()' method")
+        except TypeError:
+            error("expected to_dot method to be callable w/o args")
         else:
             data = rundot(s)
             if data:
@@ -81,6 +83,8 @@ class GraphvizMagics(Magics):
                 s = obj.to_dot()
             except AttributeError:
                 error("expected object to implement 'to_dot()' method")
+            except TypeError:
+                error("expected to_dot method to be callable w/o args")
             else:
                 data = rundot(s)
                 if data:
