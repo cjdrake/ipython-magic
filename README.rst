@@ -17,3 +17,7 @@ Contents:
   ``%fdp``, ``%fdpstr``, ``%fdpobj``, ``%fdpobjs``
   ``%sfdp``, ``%sfdpstr``, ``%sfdpobj``, ``%sfdpobjs``
   ``%twopi``, ``%twopistr``, ``%twopiobj``, ``%twopiobjs``
+
+Thanks to contributors:
+
+* John B. Nelson (@jbn)
