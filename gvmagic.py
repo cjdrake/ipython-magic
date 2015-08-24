@@ -51,7 +51,7 @@ class GraphvizMagics(Magics):
 
     @line_magic
     def dotobj(self, line):
-        self._from_str(line, 'dot')
+        self._from_obj(line, 'dot')
 
     @line_magic
     def dotobjs(self, line):
@@ -67,7 +67,7 @@ class GraphvizMagics(Magics):
 
     @line_magic
     def neatoobj(self, line):
-        self._from_str(line, 'neato')
+        self._from_obj(line, 'neato')
 
     @line_magic
     def neatoobjs(self, line):
@@ -83,7 +83,7 @@ class GraphvizMagics(Magics):
 
     @line_magic
     def sfdpobj(self, line):
-        self._from_str(line, 'sfdp')
+        self._from_obj(line, 'sfdp')
 
     @line_magic
     def sfdpobjs(self, line):
@@ -99,7 +99,7 @@ class GraphvizMagics(Magics):
 
     @line_magic
     def fdpobj(self, line):
-        self._from_str(line, 'fdp')
+        self._from_obj(line, 'fdp')
 
     @line_magic
     def fdpobjs(self, line):
@@ -115,7 +115,7 @@ class GraphvizMagics(Magics):
 
     @line_magic
     def twopiobj(self, line):
-        self._from_str(line, 'twopi')
+        self._from_obj(line, 'twopi')
 
     @line_magic
     def twopiobjs(self, line):
@@ -131,7 +131,7 @@ class GraphvizMagics(Magics):
 
     @line_magic
     def circoobj(self, line):
-        self._from_str(line, 'circo')
+        self._from_obj(line, 'circo')
 
     @line_magic
     def circoobjs(self, line):
