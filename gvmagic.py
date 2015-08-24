@@ -13,6 +13,7 @@ Magic methods:
 Usage:
     %load_ext gvmagic
 """
+
 from subprocess import Popen, PIPE
 from IPython.core.display import display_svg
 from IPython.core.magic import (
@@ -25,7 +26,7 @@ from IPython.utils.warn import info, error
 def run_graphviz(s, layout_engine='dot'):
     """Execute dot with a layout and return a raw SVG image, or None."""
     cmd = ['dot', '-Tsvg', '-K', layout_engine]
-    
+
     dot = Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
     stdoutdata, stderrdata = dot.communicate(s.encode('utf-8'))
     status = dot.wait()
@@ -47,7 +48,7 @@ class GraphvizMagics(Magics):
     @line_magic
     def dotstr(self, line):
         self._from_str(line, 'dot')
-    
+
     @line_magic
     def dotobj(self, line):
         self._from_str(line, 'dot')
@@ -63,7 +64,7 @@ class GraphvizMagics(Magics):
     @line_magic
     def neatostr(self, line):
         self._from_str(line, 'neato')
-    
+
     @line_magic
     def neatoobj(self, line):
         self._from_str(line, 'neato')
@@ -79,7 +80,7 @@ class GraphvizMagics(Magics):
     @line_magic
     def sfdpstr(self, line):
         self._from_str(line, 'sfdp')
-    
+
     @line_magic
     def sfdpobj(self, line):
         self._from_str(line, 'sfdp')
@@ -95,7 +96,7 @@ class GraphvizMagics(Magics):
     @line_magic
     def fdpstr(self, line):
         self._from_str(line, 'fdp')
-    
+
     @line_magic
     def fdpobj(self, line):
         self._from_str(line, 'fdp')
@@ -111,7 +112,7 @@ class GraphvizMagics(Magics):
     @line_magic
     def twopistr(self, line):
         self._from_str(line, 'twopi')
-    
+
     @line_magic
     def twopiobj(self, line):
         self._from_str(line, 'twopi')
@@ -127,7 +128,7 @@ class GraphvizMagics(Magics):
     @line_magic
     def circostr(self, line):
         self._from_str(line, 'circo')
-    
+
     @line_magic
     def circoobj(self, line):
         self._from_str(line, 'circo')
